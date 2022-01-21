@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Dojo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Fuente Balsamiq Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h2>Encuesta Dojo</h2>
+        <form action='/checkout' class= "form-dojo" method='POST'>
+            <div class = "area">
+                <label>Nombre</label>
+                <input type="text" name="nombre">
+            </div>
+            <div class = "area">
+                <label>Localización del Dojo</label>
+                <select name="loc-dojo">
+                    <option value='0'>San Francisco</option>
+                    <option value='1'>New York</option>
+                    <option value='2'>Florida</option>
+                    <option value='3'>Boston</option>
+                    <option value='4'>California</option>
+                </select>
+            </div>
+            <div class = "area">
+                <label>Lenguaje favorito</label>
+                <select name="leng">
+                    <option value='0'>JavaScript</option>
+                    <option value='1'>Python</option>
+                    <option value='2'>Java</option>
+                    <option value='3'>C#</option>
+                    <option value='4'>R</option>
+                </select>
+            </div>
+            <div class = "area">
+                <label>Comentario (opcional)</label>
+                <textarea></textarea>
+            </div>
+            <button type="submit" class = "submitBtn">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
