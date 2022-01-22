@@ -23,16 +23,27 @@ h2 {
 }
 .area {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin: auto;
     padding: 10px;
-    width: 50%;
+    width: 80%;
     flex-wrap: wrap;
 }
+.area label {
+    font-size: large;
+    padding: 5px;
+}
 
+.area p {
+    padding: 5px;
+}
 .submitBtn {
     background-color: blue;
     color: white;
     margin: auto;
     width: 30%;
+    padding: 10px;
+    border-radius: 50%;
 }
